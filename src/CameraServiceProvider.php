@@ -26,7 +26,7 @@ class CameraServiceProvider extends ServiceProvider
 
             $this->publishes([
                 __DIR__ . '/../resources/assets/js/update-profile-photo-camera.js' =>
-                    resource_path('assets/js/spark-components/settings/profile/update-profile-photo-camera.js')
+                    resource_path('/js/spark-components/settings/profile/update-profile-photo-camera.js')
             ], 'assets');
         }
     }

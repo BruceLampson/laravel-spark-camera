@@ -54,7 +54,7 @@ module.exports = {
             Webcam.snap((imageUri) => {
                 this.form.startProcessing();
 
-                this.$http.post('/settings/photo', this.cameraFormData(imageUri))
+                axios.post('/settings/photo', this.cameraFormData(imageUri))
                     .then((response) => {
                         this.closeCamera();
 
