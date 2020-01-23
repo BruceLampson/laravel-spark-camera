@@ -25,6 +25,16 @@ This package adds support for capturing images from your computer or phone camer
 
 - Run `npm run dev`
 
+- Edit `resources/sass/app.scss` and add the following css
+    ```css
+    #profile-photo-camera-preview,
+    #profile-photo-camera-preview video {
+        width: 100% !important;
+        height: auto !important;
+        min-width: 100px;
+        min-height: 100px;
+    }
+    ```
 
 ## 
 > This package uses [WebcamJS](https://github.com/jhuckaby/webcamjs), so if you want to configure it, overide the `configureWebcamjs` method in your `update-profile-photo.js` file.
